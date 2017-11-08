@@ -1,11 +1,13 @@
 {
   "name": "react-module-template",
+  "private": true,
   "version": "1.0.0",
   "description": "All you need to create a module with ReactJS",
   "main": "out/index.jsx",
   "scripts": {
     "prepublish": "npm run build",
     "build": "NODE_ENV=production webpack --optimize-minimize",
+    "dev": "webpack-dev-server",
     "test": "npm run lint && npm run jest",
     "jest": "jest",
     "lint": "eslint src/**"
