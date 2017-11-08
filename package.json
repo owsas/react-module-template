@@ -1,0 +1,74 @@
+{
+  "name": "react-module-template",
+  "version": "1.0.0",
+  "description": "All you need to create a module with ReactJS",
+  "main": "out/index.jsx",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "NODE_ENV=production webpack --optimize-minimize",
+    "test": "npm run lint && npm run jest",
+    "jest": "jest",
+    "lint": "eslint src/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owsas/react-module-template.git"
+  },
+  "keywords": [
+    "react",
+    "js",
+    "template",
+    "boilerplate"
+  ],
+  "author": "Juan Camilo Guarin P",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/owsas/react-module-template/issues"
+  },
+  "homepage": "https://github.com/owsas/react-module-template#readme",
+  "peerDependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "dependencies": {
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^21.1.5",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-react": "^1.0.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.10",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "enzyme": "^3.1.1",
+    "enzyme-adapter-react-16": "^1.0.4",
+    "enzyme-to-json": "^3.2.2",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "jest": "^21.2.1",
+    "react": "^16.0.0",
+    "regenerator-runtime": "^0.11.0",
+    "webpack": "^3.8.1",
+    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack-dev-server": "^2.9.3"
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/jestConfig.js"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ]
+  }
+}
