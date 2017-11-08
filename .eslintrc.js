@@ -4,6 +4,7 @@ module.exports = {
     'class-methods-use-this': 0,
   },
   env: {
-    jest: true
+    jest: true,
+    browser: true,
   }
 };
