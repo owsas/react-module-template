@@ -3,7 +3,12 @@
 Use this template to build your own modules for `react@^16.0.0`
 
 ## Usage
-Clone this repository, and start coding your own modules
+1. Clone this repository
+1. Run `yarn install` (Usage of Yarn is recommended)
+1. Edit the `src/index.jsx` file and then run `npm run dev`.  
+1. This will start the `webpack-dev-server` 
+1. Then open your browser at `localhost:3100`
+1. The browser will be updated everytime you change the code at `src/index.jsx`
 
 ## Features
 * Linting with eslint
