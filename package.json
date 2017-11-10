@@ -8,6 +8,7 @@
     "prepublish": "npm run build",
     "build": "NODE_ENV=production webpack --optimize-minimize",
     "dev": "webpack-dev-server --port 3100",
+    "start": "webpack-dev-server --port 3100",
     "test": "npm run lint && npm run jest",
     "jest": "jest",
     "lint": "eslint src/**"
