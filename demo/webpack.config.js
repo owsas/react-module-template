@@ -1,8 +1,6 @@
 /* eslint-disable import/no-dynamic-require */
 const path = require('path');
 
-const pkg = require(path.resolve('package.json'));
-
 // const isProduction = process.env.NODE_ENV === 'production';
 
 const loaders = [
@@ -17,10 +15,10 @@ module.exports = {
   target: 'web',
   devtool: 'eval-source-map',
   entry: {
-    index: path.resolve('src', 'index.jsx'),
+    app: path.resolve(__dirname, 'app.jsx'),
   },
   output: {
-    path: path.resolve('build'),
+    path: path.resolve('..', 'build'),
     filename: '[name].js',
     publicPath: '/',
   },
@@ -29,15 +27,12 @@ module.exports = {
   },
   plugins: [
   ],
-  externals: []
-    .concat(pkg.peerDependencies)
-    .concat(pkg.dependencies),
   module: {
     loaders,
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: path.resolve('demo'),
+    contentBase: __dirname,
     compress: true,
   },
 };
