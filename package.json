@@ -10,6 +10,7 @@
     "dev": "webpack-dev-server --config demo/webpack.config.js --port 3100",
     "start": "npm run dev",
     "test": "npm run lint && npm run jest",
+    "test:watch": "jest --watch",
     "jest": "jest",
     "lint": "eslint src/**"
   },
