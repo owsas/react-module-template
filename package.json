@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "description": "All you need to create a module with ReactJS",
-  "main": "out/index.jsx",
+  "main": "build/index.jsx",
   "scripts": {
     "prepublish": "npm run build",
     "build": "NODE_ENV=production webpack --optimize-minimize",
