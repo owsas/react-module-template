@@ -9,6 +9,32 @@ const loaders = [
     exclude: /node_modules/,
     loader: 'babel-loader',
   },
+  {
+    test: /\.css$/,
+    loader: 'style-loader!css-loader',
+  }, {
+    test: /\.(woff|woff2|svg|eot|ttf)$/,
+    use: [
+      {
+        loader: 'file-loader',
+        options: {
+          prefix: 'font',
+          limit: 10000,
+        },
+      },
+    ]
+    ,
+  },
+  {
+    test: /\.scss$/,
+    use: [{
+      loader: 'style-loader', // creates style nodes from JS strings
+    }, {
+      loader: 'css-loader', // translates CSS into CommonJS
+    }, {
+      loader: 'sass-loader', // compiles Sass to CSS
+    }],
+  },
 ];
 
 module.exports = {

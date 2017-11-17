@@ -50,6 +50,7 @@
     "babel-preset-env": "^1.6.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
     "enzyme": "^3.1.1",
     "enzyme-adapter-react-16": "^1.0.4",
     "enzyme-to-json": "^3.2.2",
@@ -58,6 +59,7 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-jsx-a11y": "^6.0.2",
     "eslint-plugin-react": "^7.4.0",
+    "file-loader": "^1.1.5",
     "flow-bin": "^0.59.0",
     "jest": "^21.2.1",
     "prop-types": "^15.6.0",
@@ -65,13 +67,15 @@
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "regenerator-runtime": "^0.11.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
     "webpack": "^3.8.1",
     "webpack-bundle-analyzer": "^2.9.0",
     "webpack-dev-server": "^2.9.3"
   },
   "jest": {
     "setupFiles": [
-      "raf/polyfill",      
+      "raf/polyfill",
       "<rootDir>/jestConfig.js"
     ],
     "collectCoverage": true,
