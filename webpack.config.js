@@ -1,7 +1,7 @@
 /* eslint-disable import/no-dynamic-require */
 const path = require('path');
 
-const pkg = require(path.resolve('package.json'));
+const nodeExternals = require('webpack-node-externals');
 
 // const isProduction = process.env.NODE_ENV === 'production';
 
@@ -41,23 +41,26 @@ const loaders = [
 
 module.exports = {
   target: 'web',
-  devtool: 'eval-source-map',
+  devtool: 'source-map',
   entry: {
     index: path.resolve('src', 'index.jsx'),
   },
   output: {
     path: path.resolve('build'),
     filename: '[name].js',
-    publicPath: '/',
+    libraryTarget: 'umd',
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
   },
   plugins: [
   ],
-  externals: []
-    .concat(pkg.peerDependencies)
-    .concat(pkg.dependencies),
+  externals: [
+    nodeExternals({
+      // load non-javascript files with extensions, presumably via loaders
+      whitelist: [/\.(?!(?:jsx?|json)$).{1,5}$/i],
+    }),
+  ],
   module: {
     loaders,
   },
