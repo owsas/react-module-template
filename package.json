@@ -1,7 +1,7 @@
 {
   "name": "react-module-template",
   "private": true,
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "All you need to create a module with ReactJS",
   "main": "build/index.js",
   "scripts": {
