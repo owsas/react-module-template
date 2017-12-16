@@ -5,7 +5,7 @@
   "description": "All you need to create a module with ReactJS",
   "main": "build/index.js",
   "scripts": {
-    "prepublish": "npm run build",
+    "prepublish": "npm run build && npm t",
     "build": "NODE_ENV=production webpack --optimize-minimize",
     "dev": "webpack-dev-server --config demo/webpack.config.js --port 3100",
     "start": "npm run dev",
@@ -13,10 +13,6 @@
     "test:watch": "jest --watch",
     "jest": "jest",
     "lint": "eslint src/**/*.{js,jsx}"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/owsas/react-module-template.git"
   },
   "keywords": [
     "react",
@@ -26,10 +22,6 @@
   ],
   "author": "Juan Camilo Guarin P",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/owsas/react-module-template/issues"
-  },
-  "homepage": "https://github.com/owsas/react-module-template#readme",
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.1.1",
