@@ -28,6 +28,17 @@ const loaders = [
     ,
   },
   {
+    test: /\.(png|jpg|gif)$/,
+    use: [
+      {
+        loader: 'url-loader',
+        options: {
+          limit: 8192,
+        },
+      },
+    ],
+  },
+  {
     test: /\.scss$/,
     use: [{
       loader: 'style-loader', // creates style nodes from JS strings
