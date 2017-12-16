@@ -12,6 +12,17 @@ const loaders = [
     loader: 'babel-loader',
   },
   {
+    test: /\.(png|jpg|gif)$/,
+    use: [
+      {
+        loader: 'url-loader',
+        options: {
+          limit: 8192,
+        },
+      },
+    ],
+  },
+  {
     test: /\.css$/,
     loader: 'style-loader!css-loader',
   }, {
