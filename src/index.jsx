@@ -1,7 +1,7 @@
-import React from 'react';
+import LoginModal from './LoginModal';
+import ButtonInteract from './ButtonInteract';
 
-import './index.css';
-
-export default () => (
-  <div>Hello world!</div>
-);
+export {
+  LoginModal,
+  ButtonInteract,
+};
