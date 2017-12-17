@@ -1,20 +1,12 @@
-import React from 'react';
-import { shallow } from 'enzyme';
-import toJSON from 'enzyme-to-json';
-import Test from '../src/index';
+import LoginModal2 from '../src/LoginModal';
+import ButtonInteract2 from '../src/ButtonInteract';
 
-describe('Test', () => {
-  test('should be a component', () => {
-    expect(<Test />).toBeTruthy();
-  });
+import { ButtonInteract, LoginModal } from '../src';
 
-  test('should say "Hello, world!"', () => {
-    const s = shallow(<Test />);
-    expect(s.text()).toEqual('Hello world!');
-  });
+test('should export ButtonInteract', () => {
+  expect(ButtonInteract).toEqual(ButtonInteract2);
+});
 
-  test('should match snapshot', () => {
-    const s = shallow(<Test />);
-    expect(toJSON(s)).toMatchSnapshot();
-  });
+test('should export LoginModal', () => {
+  expect(LoginModal).toEqual(LoginModal2);
 });
