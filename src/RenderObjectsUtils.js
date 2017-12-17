@@ -17,7 +17,7 @@ export default class RenderObjectsUtils {
       img: (obj.get('pics') && obj.get('pics')[0]) || obj.get('picurl') || constants.img.default,
       title: obj.get('name'),
       description: obj.get('description'),
-      date: obj.createdAt,
+      date: obj.get('start') || obj.createdAt,
       badges: obj.get('trends'),
       to: `/promos/${obj.id}`,
       author: obj.get('brand') && obj.get('brand').get('name'),
