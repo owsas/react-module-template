@@ -19,6 +19,10 @@
     raven "^2.2.1"
     raven-js "^3.20.1"
 
+"@owsas/geopromos-web-constants@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.npmjs.org/@owsas/geopromos-web-constants/-/geopromos-web-constants-1.0.1.tgz#631eea902c39cc92b4209aadbc4174806dec23f8"
+
 "@owsas/geopromos-web-css@^1.0.7":
   version "1.0.7"
   resolved "https://registry.npmjs.org/@owsas/geopromos-web-css/-/geopromos-web-css-1.0.7.tgz#96d5b54839aec8e3feccf68c4c2cd731bafa0814"
@@ -70,6 +74,10 @@ accepts@~1.3.4:
   dependencies:
     mime-types "~2.1.16"
     negotiator "0.6.1"
+
+accounting@^0.4.1:
+  version "0.4.1"
+  resolved "https://registry.npmjs.org/accounting/-/accounting-0.4.1.tgz#87dd4103eff7f4460f1e186f5c677ed6cf566883"
 
 acorn-dynamic-import@^2.0.0:
   version "2.0.2"
@@ -1649,6 +1657,14 @@ cssom@0.3.x, "cssom@>= 0.3.2 < 0.4.0":
   resolved "https://registry.yarnpkg.com/cssstyle/-/cssstyle-0.2.37.tgz#541097234cb2513c83ceed3acddc27ff27987d54"
   dependencies:
     cssom "0.3.x"
+
+currency-formatter@^1.3.1:
+  version "1.3.1"
+  resolved "https://registry.npmjs.org/currency-formatter/-/currency-formatter-1.3.1.tgz#d2fe3092ea9d9fb81f693e0fc697cca7c947d9eb"
+  dependencies:
+    accounting "^0.4.1"
+    locale-currency "0.0.1"
+    object-assign "^4.1.1"
 
 currently-unhandled@^0.4.1:
   version "0.4.1"
@@ -3725,6 +3741,10 @@ loader-utils@^1.0.1, loader-utils@^1.0.2, loader-utils@^1.1.0:
     big.js "^3.1.3"
     emojis-list "^2.0.0"
     json5 "^0.5.0"
+
+locale-currency@0.0.1:
+  version "0.0.1"
+  resolved "https://registry.npmjs.org/locale-currency/-/locale-currency-0.0.1.tgz#c9e15a22ff575b4b4bb947a4bf92ac236bd1fe9b"
 
 locate-path@^2.0.0:
   version "2.0.0"
