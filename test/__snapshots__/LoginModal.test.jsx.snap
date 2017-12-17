@@ -1,0 +1,156 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Modal
+    animation={true}
+    autoFocus={true}
+    backdrop={true}
+    bsClass="modal"
+    dialogComponentClass={[Function]}
+    enforceFocus={true}
+    id="modalLogin"
+    keyboard={true}
+    manager={
+      ModalManager {
+        "add": [Function],
+        "containers": Array [],
+        "data": Array [],
+        "handleContainerOverflow": true,
+        "hideSiblingNodes": true,
+        "isTopModal": [Function],
+        "modals": Array [],
+        "remove": [Function],
+      }
+    }
+    onHide={[Function]}
+    renderBackdrop={[Function]}
+    restoreFocus={true}
+    show={false}
+  >
+    <ModalBody
+      bsClass="modal-body"
+      componentClass="div"
+    >
+      <p
+        style={
+          Object {
+            "textAlign": "center",
+          }
+        }
+      >
+        Para interactuar con este elemento primero debes iniciar sesión
+      </p>
+    </ModalBody>
+    <ModalFooter
+      bsClass="modal-footer"
+      componentClass="div"
+    >
+      <Button
+        active={false}
+        block={false}
+        bsClass="btn"
+        bsStyle="default"
+        disabled={false}
+        id="modalButtonCancel"
+        onClick={[Function]}
+      >
+        Cancelar
+      </Button>
+      <Button
+        active={false}
+        block={false}
+        bsClass="btn"
+        bsStyle="default"
+        disabled={false}
+        id="modalButtonCancel"
+        onClick={[Function]}
+      >
+        Iniciar sesión
+      </Button>
+    </ModalFooter>
+  </Modal>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "animation": true,
+      "autoFocus": true,
+      "backdrop": true,
+      "bsClass": "modal",
+      "dialogComponentClass": [Function],
+      "enforceFocus": true,
+      "id": "modalLogin",
+      "keyboard": true,
+      "manager": ModalManager {
+        "add": [Function],
+        "containers": Array [],
+        "data": Array [],
+        "handleContainerOverflow": true,
+        "hideSiblingNodes": true,
+        "isTopModal": [Function],
+        "modals": Array [],
+        "remove": [Function],
+      },
+      "onHide": [Function],
+      "renderBackdrop": [Function],
+      "restoreFocus": true,
+      "show": false,
+    },
+    "ref": undefined,
+    "rendered": null,
+    "type": "Modal",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "animation": true,
+        "autoFocus": true,
+        "backdrop": true,
+        "bsClass": "modal",
+        "dialogComponentClass": [Function],
+        "enforceFocus": true,
+        "id": "modalLogin",
+        "keyboard": true,
+        "manager": ModalManager {
+          "add": [Function],
+          "containers": Array [],
+          "data": Array [],
+          "handleContainerOverflow": true,
+          "hideSiblingNodes": true,
+          "isTopModal": [Function],
+          "modals": Array [],
+          "remove": [Function],
+        },
+        "onHide": [Function],
+        "renderBackdrop": [Function],
+        "restoreFocus": true,
+        "show": false,
+      },
+      "ref": undefined,
+      "rendered": null,
+      "type": "Modal",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
