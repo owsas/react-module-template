@@ -62,7 +62,7 @@ ShallowWrapper {
       <Button
         active={false}
         block={false}
-        bsClass="btn"
+        bsClass="btn btn-success"
         bsStyle="default"
         disabled={false}
         id="modalButtonCancel"

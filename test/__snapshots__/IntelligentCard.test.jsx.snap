@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rendered View should match snapshot 1`] = `
+<div
+  style={
+    Object {
+      "display": "block",
+      "textDecoration": "none",
+    }
+  }
+>
+  <l
+    contentStyle={Object {}}
+    img="abc://123"
+    imgStyle={Object {}}
+  >
+    <p
+      className="false cardTitle"
+    >
+      <b>
+        La promo
+      </b>
+    </p>
+    <p
+      className="cardAuthor"
+    >
+      La marca
+    </p>
+  </l>
+</div>
+`;

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<ButtonInteract
+  className="Promo"
+  icon={<FaThumbsUp />}
+  interactionKey="promoId"
+  objectId="E5SyTySkx5"
+  onLogin={[Function]}
+  text="Me gusta"
+  textDone="Te gusta"
+  type="likes"
+/>
+`;

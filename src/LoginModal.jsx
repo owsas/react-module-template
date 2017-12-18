@@ -11,7 +11,7 @@ const LoginModal = props => (
     </Modal.Body>
     <Modal.Footer>
       <Button id="modalButtonCancel" onClick={props.onHide}>Cancelar</Button>
-      <Button id="modalButtonCancel" onClick={props.onLogin}>Iniciar sesión</Button>
+      <Button id="modalButtonCancel" bsClass="btn btn-success" onClick={props.onLogin}>Iniciar sesión</Button>
     </Modal.Footer>
   </Modal>
 );

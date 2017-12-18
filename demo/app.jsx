@@ -1,10 +1,12 @@
 import React from 'react';
 import { render } from 'react-dom';
 import 'babel-polyfill';
+import Parse from 'parse';
 import { DataBrowser as Data } from '@owsas/geopromos-private-api/out/DataBrowser';
 import '@owsas/geopromos-web-css/build/geopromos.css';
 
-import { ButtonLike, ButtonFollow, ButtonLogout } from '../src';
+import { ButtonLike, ButtonFollow, ButtonLogout, IntelligentCard } from '../src';
+
 
 class App extends React.Component {
   constructor(props) {
@@ -34,9 +36,6 @@ class App extends React.Component {
       await Data.logIn('testuser@geopromos.co', 'testuser');
     }
 
-    // Al iniciar sesión, se escribe en la consola la información del usuario
-    console.log('logged in as ', user && user.toJSON());
-
     // aquí habremos iniciado sesión
     this.setState({ loading: false, user });
   }
@@ -58,6 +57,21 @@ class App extends React.Component {
     if (this.state.loading) {
       return <div>Cargando...</div>;
     }
+
+    const promo = new Parse.Object('Promo');
+    promo.id = '123';
+    promo.set('start', new Date());
+    promo.set('pics', ['http://lorempixel.com/300/200']);
+    promo.set('name', 'Promoción de prueba');
+    promo.set('description', 'Esta es la descripción 🔥');
+
+    const product = new Parse.Object('Product');
+    product.id = '123';
+    product.set('start', new Date());
+    product.set('price', 12310);
+    product.set('pics', ['http://lorempixel.com/300/200']);
+    product.set('defaultName', 'Soy un producto');
+    product.set('description', 'Esta es la descripción 🔥');
 
     return (
       <div>
@@ -117,6 +131,13 @@ class App extends React.Component {
 <ButtonLogout onClick={() => { this.logOut() }} />
             `}
           </pre>
+        </section>
+
+        <section>
+          <h3>IntelligentCard</h3>
+          <IntelligentCard obj={promo} />
+          <div className="space" />
+          <IntelligentCard obj={product} />
         </section>
       </div>
     );

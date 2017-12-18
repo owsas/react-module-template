@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should match snapshot 1`] = `
+<ButtonInteract
+  className="Promo"
+  icon={<GoPlus />}
+  interactionKey="promoId"
+  objectId="E5SyTySkx5"
+  onLogin={[Function]}
+  text="Seguir"
+  textDone="Siguiendo"
+  type="likes"
+/>
+`;
