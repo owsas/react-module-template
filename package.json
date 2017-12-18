@@ -1,8 +1,7 @@
 {
-  "name": "react-module-template",
-  "private": true,
+  "name": "@owsas/geopromos-web-core-elements",
   "version": "1.0.1",
-  "description": "All you need to create a module with ReactJS",
+  "description": "Reusable buttons, cards and others to interact with geopromos",
   "main": "build/index.js",
   "scripts": {
     "prepublish": "npm run build && npm t",
