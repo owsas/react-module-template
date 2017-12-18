@@ -114,7 +114,7 @@ export default class ButtonInteract extends React.Component {
       .then((globalCount = 0) => {
         this.setState({ loading: false, count: userCount, globalCount });
       })
-      .catch((e) => {
+      .catch(() => {
         this.setState({ loading: false });
       });
   }
