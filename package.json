@@ -1,0 +1,86 @@
+{
+  "name": "react-module-template",
+  "private": true,
+  "version": "1.0.1",
+  "description": "All you need to create a module with ReactJS",
+  "main": "build/index.js",
+  "scripts": {
+    "prepublish": "npm run build && npm t",
+    "build": "NODE_ENV=production webpack --optimize-minimize",
+    "dev": "webpack-dev-server --config demo/webpack.config.js --port 3100",
+    "start": "npm run dev",
+    "test": "npm run lint && npm run jest",
+    "test:watch": "jest --watch",
+    "jest": "jest",
+    "lint": "eslint src/**/*.{js,jsx}"
+  },
+  "keywords": [
+    "react",
+    "js",
+    "template",
+    "boilerplate"
+  ],
+  "author": "Juan Camilo Guarin P",
+  "license": "MIT",
+  "peerDependencies": {
+    "prop-types": "^15.6.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^21.1.5",
+    "babel": "^6.23.0",
+    "babel-core": "^6.26.0",
+    "babel-jest": "^21.2.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-react": "^1.0.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-remove-prop-types": "^0.4.10",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-flow": "^6.23.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "enzyme": "^3.1.1",
+    "enzyme-adapter-react-16": "^1.0.4",
+    "enzyme-to-json": "^3.2.2",
+    "eslint": "^4.10.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.4.0",
+    "file-loader": "^1.1.5",
+    "flow-bin": "^0.59.0",
+    "jest": "^21.2.1",
+    "prop-types": "^15.6.0",
+    "raf": "^3.4.0",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1",
+    "regenerator-runtime": "^0.11.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.19.0",
+    "url-loader": "^0.6.2",
+    "webpack": "^3.8.1",
+    "webpack-bundle-analyzer": "^2.9.0",
+    "webpack-dev-server": "^2.9.3",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "jest": {
+    "setupFiles": [
+      "raf/polyfill",
+      "<rootDir>/jestConfig.js"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
+      "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
+    }
+  }
+}

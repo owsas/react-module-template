@@ -1,0 +1,10 @@
+.vscode/
+node_modules/
+build/app.js
+coverage/
+src/
+test/
+.eslintrc.js
+jestConfig.js
+webpack.config.js
+.DS_Store
