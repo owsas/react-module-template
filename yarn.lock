@@ -2,9 +2,9 @@
 # yarn lockfile v1
 
 
-"@owsas/geopromos-private-api@^1.1.7":
-  version "1.1.7"
-  resolved "https://registry.npmjs.org/@owsas/geopromos-private-api/-/geopromos-private-api-1.1.7.tgz#bdb33f9b236cbcef8a23dd01d677e4278461be14"
+"@owsas/geopromos-private-api@^1.2.1":
+  version "1.2.1"
+  resolved "https://registry.npmjs.org/@owsas/geopromos-private-api/-/geopromos-private-api-1.2.1.tgz#e95fc863ab4aa22e58a0fdd9b9fa56c7bff5b280"
   dependencies:
     "@types/parse" "^2.4.1"
     assert "^1.4.1"
@@ -41,24 +41,24 @@
   resolved "https://registry.yarnpkg.com/@types/jest/-/jest-21.1.6.tgz#9467945ce33261e4fdd14276576951aa130515aa"
 
 "@types/jquery@*":
-  version "3.2.17"
-  resolved "https://registry.npmjs.org/@types/jquery/-/jquery-3.2.17.tgz#01df9805dd5cf83a14cf5bfd81adced7d4fbd970"
+  version "3.2.18"
+  resolved "https://registry.npmjs.org/@types/jquery/-/jquery-3.2.18.tgz#a1cd262034cd8c79fa4d9b2a409d8f747ac2f72f"
 
 "@types/node@*":
   version "8.0.51"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-8.0.51.tgz#b31d716fb8d58eeb95c068a039b9b6292817d5fb"
 
 "@types/parse@^2.4.1":
-  version "2.4.2"
-  resolved "https://registry.npmjs.org/@types/parse/-/parse-2.4.2.tgz#60d06ad0fce64615f1b0a9a59a4fda91583c8c15"
+  version "2.4.3"
+  resolved "https://registry.npmjs.org/@types/parse/-/parse-2.4.3.tgz#15052a9af26f7d5dce3e281b8739f73bd0393f9c"
   dependencies:
     "@types/jquery" "*"
     "@types/node" "*"
     "@types/underscore" "*"
 
 "@types/underscore@*":
-  version "1.8.6"
-  resolved "https://registry.npmjs.org/@types/underscore/-/underscore-1.8.6.tgz#3f4b9c5915379b420fe7de75bd8cb58a7d9835ed"
+  version "1.8.7"
+  resolved "https://registry.npmjs.org/@types/underscore/-/underscore-1.8.7.tgz#5e4fe5d18376647fb8a1fe33f8ded0d8ccfa783c"
 
 abab@^1.0.3:
   version "1.0.4"
@@ -3830,8 +3830,8 @@ make-dir@^1.0.0:
     pify "^3.0.0"
 
 make-error@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.npmjs.org/make-error/-/make-error-1.3.0.tgz#52ad3a339ccf10ce62b4040b708fe707244b8b96"
+  version "1.3.2"
+  resolved "https://registry.npmjs.org/make-error/-/make-error-1.3.2.tgz#8762ffad2444dd8ff1f7c819629fa28e24fea1c4"
 
 makeerror@1.0.x:
   version "1.0.11"
@@ -3988,9 +3988,13 @@ mkdirp@0.5.x, "mkdirp@>=0.5 0", mkdirp@^0.5.1, mkdirp@~0.5.0, mkdirp@~0.5.1:
   dependencies:
     minimist "0.0.8"
 
-moment@^2.19.2, moment@^2.19.3:
+moment@^2.19.2:
   version "2.19.4"
   resolved "https://registry.npmjs.org/moment/-/moment-2.19.4.tgz#17e5e2c6ead8819c8ecfad83a0acccb312e94682"
+
+moment@^2.19.3:
+  version "2.20.1"
+  resolved "https://registry.npmjs.org/moment/-/moment-2.20.1.tgz#d6eb1a46cbcc14a2b2f9434112c1ff8907f313fd"
 
 ms@2.0.0:
   version "2.0.0"
@@ -4841,8 +4845,8 @@ public-encrypt@^4.0.0:
     randombytes "^2.0.1"
 
 pubsub-js@^1.5.7:
-  version "1.5.7"
-  resolved "https://registry.npmjs.org/pubsub-js/-/pubsub-js-1.5.7.tgz#a9f386ac141b0905b19cbb2dd57256265f975744"
+  version "1.6.0"
+  resolved "https://registry.npmjs.org/pubsub-js/-/pubsub-js-1.6.0.tgz#232d36485ce7905a54629ec5783d9f6f4c638026"
 
 pubsub-replay@^1.0.1:
   version "1.0.1"
@@ -4936,8 +4940,8 @@ range-parser@^1.0.3, range-parser@~1.2.0:
   resolved "https://registry.yarnpkg.com/range-parser/-/range-parser-1.2.0.tgz#f49be6b487894ddc40dcc94a322f611092e00d5e"
 
 raven-js@^3.20.1:
-  version "3.21.0"
-  resolved "https://registry.npmjs.org/raven-js/-/raven-js-3.21.0.tgz#609236eb0ec30faf696b552f842a80b426be6258"
+  version "3.22.1"
+  resolved "https://registry.npmjs.org/raven-js/-/raven-js-3.22.1.tgz#1117f00dfefaa427ef6e1a7d50bbb1fb998a24da"
 
 raven@^2.2.1:
   version "2.3.0"
