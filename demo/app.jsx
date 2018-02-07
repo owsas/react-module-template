@@ -12,6 +12,9 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
+    Parse.serverURL = 'https://geopromos-testserver.herokuapp.com/parse';
+    Parse.initialize('6df8948635e7a2e0a4ad5d64c434407a', '221b368d7f5f597867f525971f28ff75');
+
     this.state = {
       loading: true,
       user: undefined,
@@ -33,7 +36,7 @@ class App extends React.Component {
 
     if (!user) {
       // se inicia sesión
-      await Data.logIn('testuser@geopromos.co', 'testuser');
+      await Data.logIn('test@geopromos.co', 'testpass');
     }
 
     // aquí habremos iniciado sesión
@@ -57,6 +60,8 @@ class App extends React.Component {
     if (this.state.loading) {
       return <div>Cargando...</div>;
     }
+
+    const { user } = this.state;
 
     const promo = new Parse.Object('Promo');
     promo.id = '123';
@@ -83,20 +88,19 @@ class App extends React.Component {
         </section>
         <section>
           <h2>ButtonLike</h2>
-          <ButtonLike
-            onLogin={() => {}}
-            className="Promo"
-            objectId="E5SyTySkx5"
-            interactionKey="promoId"
-          />
+          {
+            user &&
+            <ButtonLike
+              actor={`_User:${user.id}`}
+              object="Promo:12312"
+            />
+          }
 
           <pre>
             {`
 <ButtonLike
-  onLogin={() => {}}
-  className="Promo"
-  objectId="E5SyTySkx5"
-  interactionKey="promoId"
+  actor={"_User:"+ user.id}
+  object="Promo:12312"
 />
             `}
           </pre>
@@ -104,20 +108,39 @@ class App extends React.Component {
 
         <section>
           <h2>ButtonFollow</h2>
-          <ButtonFollow
-            onLogin={() => { this.logIn(); }}
-            className="Brand"
-            objectId="rfTXdAPdWr"
-            interactionKey="brandId"
-          />
+          {
+            user &&
+            <ButtonFollow
+              actor={`_User:${user.id}`}
+              object="Product:12312"
+            />
+          }
 
           <pre>
             {`
 <ButtonFollow
-  onLogin={() => {}}
-  className="Brand"
-  objectId="rfTXdAPdWr"
-  interactionKey="brandId"
+  actor={"_User:"+ user.id}
+  object="Product:12312"
+/>
+            `}
+          </pre>
+        </section>
+
+        <section>
+          <h2>ButtonSubscribe</h2>
+          {
+            user &&
+            <ButtonFollow
+              actor={`_User:${user.id}`}
+              object="Product:12312"
+            />
+          }
+
+          <pre>
+            {`
+<ButtonFollow
+  actor={"_User:"+ user.id}
+  object="Product:12312"
 />
             `}
           </pre>
