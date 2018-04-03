@@ -32,6 +32,7 @@
     "@types/jest": "^21.1.5",
     "babel": "^6.23.0",
     "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
     "babel-jest": "^21.2.0",
     "babel-loader": "^7.1.2",
     "babel-plugin-react": "^1.0.0",
