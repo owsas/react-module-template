@@ -5,7 +5,7 @@
   "description": "All you need to create a module with ReactJS",
   "main": "build/index.js",
   "scripts": {
-    "prepublish": "npm run build && npm t",
+    "prepublishOnly": "npm run build && npm t",
     "build": "NODE_ENV=production webpack --optimize-minimize",
     "dev": "webpack-dev-server --config demo/webpack.config.js --port 3100",
     "start": "npm run dev",
