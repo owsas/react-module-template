@@ -29,3 +29,6 @@ Cali, Colombia, 2017
 
 ## License
 MIT
+
+## Support us on Patreon
+[![patreon](./repo/patreon.png)](https://patreon.com/owsas)
