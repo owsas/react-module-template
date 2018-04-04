@@ -24,7 +24,8 @@ Use this template to build your own modules for `react@^16.0.0`
 
 ## Credits
 Juan Camilo Guarín Peñaranda  
-[Otherwise SAS](https://github.com/owsas)  
+[Otherwise SAS](https://github.com/owsas) 
+https://owsas.com  
 Cali, Colombia, 2017
 
 ## License
