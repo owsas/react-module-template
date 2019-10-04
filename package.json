@@ -67,7 +67,7 @@
     "url-loader": "0.6.2",
     "webpack": "3.8.1",
     "webpack-bundle-analyzer": "2.11.1",
-    "webpack-dev-server": "2.9.4",
+    "webpack-dev-server": "3.1.11",
     "webpack-node-externals": "1.7.2"
   },
   "jest": {
